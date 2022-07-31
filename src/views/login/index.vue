@@ -92,7 +92,7 @@ export default {
         } = await login(this.mobile, this.code)
         this.$store.commit('SET_TOKEN', token)
         this.loding()
-        this.$router.push('/profile')
+        this.$router.push('/my')
         this.$toast.success('登录成功')
         // console.log(res)
       } catch (error) {
