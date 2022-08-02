@@ -90,6 +90,7 @@ export default {
         const {
           data: { data: token }
         } = await login(this.mobile, this.code)
+        console.log(token)
         this.$store.commit('SET_TOKEN', token)
         this.loding()
         this.$router.push('/my')
