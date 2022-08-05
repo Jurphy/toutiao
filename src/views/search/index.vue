@@ -12,6 +12,7 @@
         class="rearch"
         @search="onSearch"
         @focus="onSearchfocus"
+        @cancel="$router.back()"
       />
     </form>
     <!-- 搜索历史/ 建议 / 结果 -->
